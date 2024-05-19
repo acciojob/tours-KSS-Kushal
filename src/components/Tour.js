@@ -7,7 +7,7 @@ const Tour = ({id, name, info, image, price, onDelete}) => {
         <p>{name}</p>
         <p className="tour-info" id={`tour-item-para-${id}`}>
             {showMore?info:info.slice(0,200)}
-            <span style={{color: 'blue', fontWeight:'bold', cursor:'pointer'}} onClick={()=>setShowMore(!showMore)}>
+            <span id={`see-more-${id}`} style={{color: 'blue', fontWeight:'bold', cursor:'pointer'}} onClick={()=>setShowMore(!showMore)}>
                 {showMore?'See less':'Show more'}
             </span>
         </p>
