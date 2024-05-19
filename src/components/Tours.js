@@ -10,7 +10,7 @@ const Tours = ({data, setData}) => {
   return (
     <div>
         {data.map((v, i)=>(
-            <Tour key={i} name={v.name} info={v.info} image={v.image} price={v.price} onDelete={()=>onDelete(v.id)} />
+            <Tour key={i} id={v.id} name={v.name} info={v.info} image={v.image} price={v.price} onDelete={()=>onDelete(v.id)} />
         ))}
     </div>
   )
