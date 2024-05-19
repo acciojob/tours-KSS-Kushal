@@ -8,7 +8,7 @@ const Tour = ({id, name, info, image, price, onDelete}) => {
         <p className="tour-info" id={`tour-item-para-${id}`}>
             {showMore?info:info.slice(0,200)}
             <span id={`see-more-${id}`} style={{color: 'blue', fontWeight:'bold', cursor:'pointer'}} onClick={()=>setShowMore(!showMore)}>
-                {showMore?'See less':'See more'}
+                {showMore?'Show less':'See more'}
             </span>
         </p>
         <img src={image} alt="" className="" />
